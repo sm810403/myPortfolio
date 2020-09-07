@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+.header {
+    height: 95vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(221, 221, 221, 0.5)), url(../img/skyrocket.jpg);
+    /* linear-gradient(rgba(126,213,11,0.8),rgba(40,180,131,0.8)) */
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%,0 100%);
+}
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo{
+    height: 90px;
+}
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+}
+.heading-primary-box{
+    text-transform: uppercase;
+}
+.heading-main{
+    color: #000;
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    padding-left: 37px;
+    animation: slideInLeft 3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+.heading-sub{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 9px;
+    font-weight: 700;
+    padding-left: 11px;
+    animation: slideInRight 3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70%{
+        transform: translateX(+2%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }  
+}
+@keyframes slideInRight{
+    0%{
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+    70%{
+        transform: translateX(-2%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }  
+}
+.heading-btn{
+    display: block;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 128, 128, 0.7);
+    border: none;
+    padding: 20px 100px;
+    margin: 30px auto 10px;
+    font-size: 18px;
+    border-radius: 50px;
+    color: white;
+    animation: slideUp 2s ease-in-out;
+    animation-fill-mode: backwards;
+    transition: transform .4s ease-out;
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(+100%);
+        opacity:0;
+    }
+    70%{
+        transform: translateY(-2%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }  
+}
+.heading-btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 2px 5px black;
+}
+.heading-btn:active{
+    transform: translateY(-1px);
+    background-color: white;
+    color: black;
+}
