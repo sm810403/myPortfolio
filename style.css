@@ -84,13 +84,14 @@ body{
     }  
 }
 .heading-btn{
-    display: block;
+    position: relative;
+    display: inline-block;
     outline: none;
     cursor: pointer;
     background-color: rgba(0, 128, 128, 0.7);
     border: none;
     padding: 20px 100px;
-    margin: 30px auto 10px;
+    margin: 30px auto 30px;
     font-size: 18px;
     border-radius: 50px;
     color: white;
@@ -113,10 +114,11 @@ body{
 }
 .heading-btn:hover{
     transform: translateY(-4px);
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
 }
 .heading-btn:active{
     transform: translateY(-1px);
     background-color: white;
     color: black;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
 }
